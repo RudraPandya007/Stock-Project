@@ -12,6 +12,8 @@ import java.io.FileNotFoundException;
 and analyzing financial data of different firms and applying mathematical techniques for price analysis 
 using Object-Oriented Design and Object Oriented Programming with Java. In future, I am planning to implement 
 Data Science Techniques in order to create visualization for companies' performances, and use APIs to fetch real-world data instead of hard-coding it.
+
+PS: I made this project before taking Data Structures (which I am next semester). I made this on the basis of my knowledge from Intro to CS (prereq to Data Structures)
 */
 
 /*  Note about GitHub: 

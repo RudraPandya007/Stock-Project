@@ -1,0 +1,19 @@
+Meta                                        
+Apple                                       
+Amazon                                      
+Netflix                                     
+Google                                      
+Nvidia                                      
+IBM                                         
+Accenture                                   
+AMD (Advanced Micro Devices)                
+Tesla                                       
+Microsoft                                   
+Intel                                       
+Dell                                        
+S&Pglobal                                   
+JPMorgan & Chase co                         
+Morgan Stanley                              
+Goldman Sachs                               
+Blackstone                                  
+BlackRock                                   

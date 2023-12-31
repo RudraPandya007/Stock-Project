@@ -111,7 +111,7 @@ public class StockMgmt {
         StdOut.println("--------------------------------------------------------------------------");
     }
 
-    //gets every existent stockname of each company using an enhanced for loop.
+    //gets every existent stockname of each company using a normal for loop.
     public static void AllStockNameAndTicker(ArrayList<Stock> stocksOfcompanies){
         for (int i = 0; i < stocksOfcompanies.size(); i++){
             StdOut.println((i+1) + " - " + stocksOfcompanies.get(i).getStockname() + " and its ticker " + stocksOfcompanies.get(i).getTicker());
@@ -120,7 +120,7 @@ public class StockMgmt {
         StdOut.println("--------------------------------------------------------------------------");
     }
 
-    //gets every existent ticker of each company using an enhanced for loop.
+    //prints if the ticker exists or not using a normal for loop.
     public static void TickerExistence(ArrayList<Stock> stocksOfcompanies, String ticker){
         Boolean tickerExists = false;
         String tickerBelonging = null;
@@ -141,7 +141,7 @@ public class StockMgmt {
         StdOut.println("--------------------------------------------------------------------------");
     }
 
-    //gets individual current price of the stock using an enchanced for loop.
+    //gets individual current price of the stock using a normal loop.
     public static void IndividualCurrentPrice(ArrayList<Stock> stocksOfcompanies){
         for (int i = 0; i < stocksOfcompanies.size(); i++){
             StdOut.println(stocksOfcompanies.get(i).getStockname() + " - " + stocksOfcompanies.get(i).getCurrentPrice());
@@ -150,7 +150,7 @@ public class StockMgmt {
         StdOut.println("--------------------------------------------------------------------------");
     }
 
-    //gets individual IPO/firstPrice using an enhanced for loop.
+    //gets individual IPO/firstPrice using a normal loop.
     public static void IndividualFirstPrice(ArrayList<Stock> stocksOfcompanies){
         for (int i = 0; i < stocksOfcompanies.size(); i++){
             StdOut.println(stocksOfcompanies.get(i).getStockname() + " - " + stocksOfcompanies.get(i).getFirstPrice());
@@ -201,8 +201,8 @@ public class StockMgmt {
             StdOut.println("--------------------------------------------------------------------------");
         }
     }
-    //gets percentage difference of the specific stock the user wants instead of all of them. 
-    //Outputs percentage difference between the updated and the previous price. The previous price are in prices.txt
+    /*gets percentage difference of the specific stock the user wants instead of all of them. 
+    Outputs percentage difference between the updated and the previous price. The previous price are in prices.txt */
     public static void specificStockPercentDifference(ArrayList<Stock> stocksOfcompanies, String company){
         for (Stock stock : stocksOfcompanies){
             if(stock.getStockname().equalsIgnoreCase(company)){
@@ -241,8 +241,9 @@ public class StockMgmt {
         }
     }
 
-    //gets memory address or memory location of the stock for identitification purposes. 
-    //may have cybersecurity or personal infomation access application in the real world when discussing about trade execution addresses/receipts.
+    /*gets memory address or memory location of the stock for identitification purposes. 
+    may have cybersecurity or personal infomation access application in the real world when discussing about trade execution addresses/receipts.
+    */
     public static void printOutStockAddress(ArrayList<Stock> stocksOfcompanies){
         StdOut.println("The following are the memory addresses of the stocks: ");
         for (int i = 0; i < stocksOfcompanies.size(); i++){
@@ -252,8 +253,9 @@ public class StockMgmt {
         StdOut.println("--------------------------------------------------------------------------");
     }
 
-    //printing out stock memory address as per client's request, saving user time by not doing it manually. 
-    //may have cybersecurity or personal information access application based on client's specific request when discussing about trade execution addresses/receipts.
+    /*printing out stock memory address as per client's request, saving user time by not doing it manually. 
+    may have cybersecurity or personal information access application based on client's specific request when discussing about trade execution addresses/receipts.
+    */
     public static void printOutSpecificStockAddress(ArrayList<Stock> stocksOfcompanies, String company){
         StdOut.print("The following is the memory address of " + company + ": ");
         for (Stock stock : stocksOfcompanies) {
@@ -267,7 +269,8 @@ public class StockMgmt {
         StdOut.println("Stock not found."); //if stock is not present, this would be outputted.
     }
     /*compares every companies" performances by comparing the percent difference btween yesterday's closing-in price and 
-    today's closing-in price respectively for all companies */
+    today's closing-in price respectively for all companies 
+    */
     public static void comparativePercentDifference(ArrayList<Stock> stocksOfcompanies){
     ArrayList<Double> percentCollection = new ArrayList<>(19);
     ArrayList<String> companyCollection = new ArrayList<>(19);
@@ -329,7 +332,9 @@ public class StockMgmt {
     StdOut.println();
     StdOut.println("--------------------------------------------------------------------------");
 }
-    //compares two companies' performances by comparing the percent difference between yesterday's closing-in price and today's closing-in price respectively for both companies. 
+    /* compares two companies' performances by comparing the percent difference between yesterday's closing-in price and today's 
+    closing-in price respectively for both companies. 
+    */
     public static void specificComparativePercentDifference(ArrayList<Stock> stocksOfcompanies, String company1, String company2){
         StdOut.println();
         double percentDiff1 = 0;
